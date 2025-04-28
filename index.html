@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium coffee beans, brewing equipment, and accessories for coffee enthusiasts">
+    <meta name="keywords" content="coffee, coffee beans, organic coffee, brewing equipment, coffee accessories">
+    <title>Brewed - Premium Coffee Store</title>
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="home">
+        <div class="nav-container">
+            <div class="navigation">
+                <h1>Brewed</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#brewing">Brewing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="home">
+            <article class="home-content">
+                <h2>Discover the Perfect Brew</h2>
+                <p>Ethically sourced, expertly roasted coffee beans delivered to your doorstep</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </article>
+        </section>
+    </header>
+
+    <!-- About -->
+     <main>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Our Coffee</h2>
+            <section class="columns">
+                <article class="column">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2015, Brewed began with a simple mission: to provide coffee lovers with ethically sourced, expertly roasted beans that highlight the unique characteristics of each origin.</p>
+                    <p>We work directly with farmers across the globe to ensure fair prices and sustainable farming practices.</p>
+                </article>
+                <article class="column">
+                    <h3>Our Process</h3>
+                    <p>Each batch of our coffee is carefully selected, roasted in small batches, and packed at the peak of freshness to ensure the most flavorful cup possible.</p>
+                    <p>Our master roasters have over 20 years of combined experience in bringing out the best in every bean.</p>
+                </article>
+                <article class="column">
+                    <h3>Our Promise</h3>
+                    <p>We guarantee freshness in every bag. All orders are roasted within 48 hours of shipping to ensure you experience coffee as it's meant to be.</p>
+                    <p>If you're not completely satisfied with your purchase, we offer a 30-day money-back guarantee.</p>
+                </article>
+            </section>
+            <figure class="about-figure">
+                <img src="images/coffee-beans.jpg" alt="Premium coffee beans being sorted">
+                <figcaption>Our premium coffee beans being hand-selected for quality</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <section class="product-listings"></section>
+            <ul class="product-grid">
+                <li>
+                <article class="product-card">
+                    <img src="images/Ethopia-coffee.jpg" alt="Ethiopian Yirgacheffe Coffee">
+                    <h3>Ethiopian Yirgacheffe</h3>
+                    <p>Bright, fruity notes with hints of citrus and floral undertones. Medium roast.</p>
+                    <p class="price">9.900 BHD</p>
+                    
+                    <!-- Freshness progress -->
+                    <div class="freshness-indicator">
+                    <label for="freshness-ethiopian">Freshness:</label>
+                    <progress id="freshness-ethiopian" value="90" max="100">90%</progress>
+                    <span>Roasted 3 days ago</span>
+                </div>
+                 <a href="#contact" class="btn">Order Now</a>
+                </article>
+                </li> 
+                <li> 
+                <article class="product-card">
+                    <img src="images/colombia-coffee.jpg" alt="Colombian Supremo Coffee">
+                    <h3>Colombian Supremo</h3>
+                    <p>Rich, full-bodied flavor with caramel sweetness and a nutty finish. Medium-dark roast.</p>
+                    <p class="price">7.500 BHD</p>
+
+                    <div class="freshness-indicator">
+                    <label for="freshness-colombian">Freshness:</label>
+                    <progress id="freshness-colombian" value="75" max="100">75%</progress>
+                     <span>Roasted 5 days ago</span>
+                    </div>
+                    <a href="#contact" class="btn">Order Now</a>
+                </article>
+                 </li> 
+                 <li>
+
+                <article class="product-card">
+                    <img src="images/excelsa-coffee.jpg" alt="Excelsa Coffee">
+                    <h3>Excelsa</h3>
+                    <p>Excelsa is known for exhibiting characteristics of both light and dark roast coffees and has a tarter, fruitier flavor.</p>
+                    <p class="price">11 BHD</p>
+
+    
+                <div class="freshness-indicator">
+                 <label for="freshness-excelsa">Freshness:</label>
+                <progress id="freshness-excesla" value="75" max="100">75%</progress>
+                <span>Roasted 1 week ago</span>
+                </div>
+                <a href="#contact" class="btn">Order Now</a>
+                </article>
+                </li>
+                <li>
+
+                <article class="product-card">
+                    <img src="images/robusta-coffee.jpg">
+                    <h3>Robusta</h3>
+                    <p>Robusta bean has a sharper, more robust flavor. The bean has a strong scent in addition to a powerful flavor.</p>
+                    <p class="price">6.500 BHD</p>
+
+                    
+                    <div class="freshness-indicator">
+                    <label for="freshness-robusta">Freshness:</label>
+                    <progress id="freshness-robusta" value="75" max="100">75%</progress>
+                    <span>Roasted 1 week ago</span>
+                </div>
+                    <a href="#contact" class="btn">Order Now</a>
+                </article>
+            </li>
+        </section>
+    </div>
+    </section>
+    </main>
+
+    <!-- Brewing -->
+    <section id="brewing" class="brewing-section">
+        <div class="container">
+            <h2>Brewing Guides</h2>
+            <div class="brewing-content">
+                <div class="video-container">
+                    <h3>Mastering Pour Over Technique</h3>
+                    <video width="100%" controls>
+                        <source src="video/How to Master Pour Over Coffee.mp4" type="video/mp4">
+                        Your browser does not support the video tag
+                    </video>
+                <details>
+                    <summary>View transcript</summary>
+                    <div class="faq-content">
+                    <p>So now we're gonna make a pour-over with our Courage blend, which is 100% Arabica. We also changed the grind size down to 15, which is their recommended setting on this grinder for a pour-over. Let's see. So first, before we add the grinds, we're just gonna clean the filter with some hot water. Um, so now we add 22 grams of coffee and it's fine, like beach sand. So first, we're gonna tear that. All right, we're gonna start with 50 grams and let the grinds bloom first. It's gonna bloom for 30 seconds. We're gonna keep going to up to 200 grams. All right, and then we're gonna finish off at 320. All right, and now we just wait. Like, I feel like the single-serve pour-over V60 method became really popular during the third wave movement of specialty coffee, which is really centered around um Arabica beans and like high acidic, really fruity, floral types of coffee flavors. And so I wanted to kind of share like that full like experience of folks by using our 100% Arabica from Vietnam.</p>
+                    <p>Um, and also because it is like such a quick extraction, and since Arabica beans have like 6% more sugar and also 6% more fats than Robusta beans, I feel like you're gonna get much more of a like floral and sweet experience in this really quick extraction. And we're all done! About three minutes. Mm-hmm. Oh yeah. It has a nice hint of like fruit and like some cherries, but it's not too tart. This is a great option for folks who kind of prefer a more um fruity, uh sweeter coffee.</p>
+                </div>
+                </details>
+                </div>
+            
+                <div class="audio-container">
+                    <h3>Coffee Culture</h3>
+                    <audio controls>
+                        <source src="audio/How humanity got hooked on coffee - Jonathan Morris.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag
+                    </audio>
+                    <p>If you want to learn more about coffee and its origins.  This audio is for you.  Listen to how coffee has a significant influence on the world throughout generations.</p>
+                    <p>It covers everyhing you need to know about coffee!</p>
+                    
+                </div>
+
+                <div class="container">
+                    <div class="video-container">
+                        <h3>All of our coffee beans come fresh and ready to be served hot or cold!</h3>
+                        <video width="100%" controls>
+                        <source src="video/Coffee _ A Cinematic Short Film.mp4" type="video/mp4">
+                        Your browser does not support the video tag
+                        </video>
+                    </div>
+                </div>
+
+                <!-- FAQs -->
+                <section class="brewing-faqs">
+                <h3>Coffee brewing FAQS</h3>
+    
+                <details>
+                <summary>What's the ideal water temperature for brewing coffee?</summary>
+                <div class="faq-content">
+                <p>The ideal water temperature for brewing coffee is between 195°F and 205°F (90-96°C). Water that's too hot can extract bitter compounds, while water that's too cool may result in under-extraction and sour flavors.</p>
+            </div>
+    </details>
+    
+    <details>
+        <summary>How long should coffee bloom during pour-over?</summary>
+        <div class="faq-content">
+            <p>Allow your coffee to bloom for 30-45 seconds. This allows CO2 to escape and ensures even extraction. Add just enough water to saturate the grounds, then wait before continuing your pour.</p>
+        </div>
+    </details>
+    
+    <details>
+        <summary>What grind size should I use for different brewing methods?</summary>
+        <div class="faq-content">
+            <p>Use coarse grind for French press, medium-coarse for Chemex, medium for drip coffee, medium-fine for pour-over, and fine for espresso. The grind size affects extraction rate and flavor profile.</p>
+        </div>
+    </details>
+    </section>
+    </div>
+    </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2>Coffee Knowledge Quiz</h2>
+            <div class="quiz-container">
+                <div class="quiz-question">
+                    <h3>Which country is the largest producer of coffee in the world?</h3>
+                    <div class="quiz-options">
+                        <label>
+                            <input type="radio" name="coffee-quiz" value="colombia"> Colombia
+                        </label>
+                        <label>
+                            <input type="radio" name="coffee-quiz" value="brazil"> Brazil
+                        </label>
+                        <label>
+                            <input type="radio" name="coffee-quiz" value="vietnam"> Vietnam
+                        </label>
+                        <label>
+                            <input type="radio" name="coffee-quiz" value="ethiopia"> Ethiopia
+                        </label>
+                    </div>
+                    <button id="quiz-submit" class="btn">Check Answer</button>
+                    <p id="quiz-result"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <aside class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <address>
+                        <p>Tubli branch</p>                
+                        <p>Email: <a href="mailto:info@brewed.com">info@brewed.com</a></p>
+                        <p>Phone: (+973) 123-456-78</p>
+                    </address>
+                    <article class="hours">
+                        <h4>Store Hours</h4>
+                        <p>Monday - Friday: 7am - 7pm</p>
+                        <p>Saturday: 8am - 6pm</p>
+                        <p>Sunday: 9am - 5pm</p>
+                        <div class="social-links">
+                            <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <li><a href="https://facebook.com" target="_blank" class="icon icon-facebook" aria-label="Visit our Facebook page"></a></li>
+                                <li><a href="https://instagram.com" target="_blank" class="icon icon-instagram" aria-label="Visit our Instagram page"></a></li>
+                                <li><a href="https://X.com" target="_blank" class="icon icon-X" aria-label="Visit our X page"></a></li>
+                                <li><a href="https://tiktok.com" target="_blank" class="icon icon-tiktok" aria-label="Visit our Tiktok page"></a></li>
+                    </article>
+                </aside>
+                <article class="contact-form">
+                    <h3>Order or Inquiry Form</h3>
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-78">
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message/Order Details</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                        <div id="form-success" class="success-message"></div>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            
+            <div class="footer-content">
+            
+                <div class="footer">
+                    <h3>Brewed</h3>
+                    <p>Premium Coffee Experience</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#brewing">Brewing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for exclusive offers and brewing tips.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn">Subscribe</button>
+                        
+                        </div>
+                    </form>
+                     
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;2025 Brewed. All Rights Reserved.</p>
+            </div> 
+        </div>
+    </footer>
+</body>
+</html>

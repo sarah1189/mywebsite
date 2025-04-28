@@ -1,0 +1,694 @@
+/* Web fonts */
+@font-face {
+    font-family: 'font1';
+    src: url(Inter_28pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+/* Main base style */
+:root {
+    --primary-color: #be9166;
+    --accent-color: #8C5E2A;
+    --light-accent: #D4A76A;
+    --dark-brown: #3A2618;
+    --light-brown: #C8B6A6;
+    --background-light: #FFFFFF;
+    --text-dark: #333333;
+    --text-light: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+    line-height: 1.6;
+    
+    
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display';
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+/* First letter styling */
+h1::first-letter,
+h2::first-letter,
+h3::first-letter
+ {
+    color: var(--accent-color);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c26d1f9a;
+    color: var(--text-light);
+}
+
+/* Header Styles */
+header {
+    background-image: url('images/background-coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text-light);
+    position: relative;
+    
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navigation h1 {
+    margin-bottom: 0;
+}
+
+/* Menu text with glow effect */
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 1.5rem;
+}
+
+.menu a {
+    color: var(--text-light);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+    transition: text-shadow 0.3s ease;
+}
+
+.menu a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.home {
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* About */
+.about-section {
+    background-color: #222;
+    padding: 4rem 0;
+    color: #F0F0F0;
+}
+
+/* Columns  */
+.columns {
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 5px dotted var(--light-brown)
+    
+    
+}
+
+
+.about-figure {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.about-figure figcaption {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: var(--accent-color);
+}
+
+/* Products */
+.products-section {
+    background-color: #3d3d3c;
+    padding: 4rem 0;
+    color: #F0F0F0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: var(--background-light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3, .product-card p {
+    padding: 0 1rem;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.product-card .btn {
+    margin: 1rem;
+}
+
+/* Progress Bar and freshness indicator */
+.freshness-indicator {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.freshness-indicator label {
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+progress {
+    height: 12px;
+    width: 100%;
+}
+
+.freshness-indicator span {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* Brewing */
+.brewing-section {
+    background-image: url('images/offwhite-background.jpg');
+    background-repeat: repeat;
+}
+
+.brewing-section h2 {
+    color: #0a0704c7; 
+}
+
+
+.brewing-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.video-container, .audio-container {
+    padding: 1rem;
+    background-color: #f7f4ef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+video, audio {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* FAQ Container Styling */
+.brewing-faqs {
+    /* Container structure */
+    margin: 1rem auto;
+    max-width: 800px;
+    
+    /* Container visual styling */
+    background-color: #f9f5f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    border: 1px solid #e8e0d5;
+    
+
+}
+
+.brewing-faqs h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Style the details elements inside the container */
+.brewing-faqs details {
+    margin-bottom: 1rem;
+    border: 1px solid rgba(140, 94, 42, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.199);
+    
+}
+
+.brewing-faqs summary {
+    padding: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: rgba(140, 94, 42, 0.05);
+}
+
+.brewing-faqs summary:hover {
+    background-color: rgba(158, 120, 77, 0.651);
+}
+
+.brewing-faqs details[open] summary {
+    border-bottom: 1px solid rgba(140, 94, 42, 0.2);
+}
+
+.brewing-faqs .faq-content {
+    padding: 1rem;
+}
+
+details {
+    margin-bottom: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+summary {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    list-style-position: inside;
+}
+
+summary:hover {
+    background-color: rgba(158, 120, 77, 0.651);
+}
+
+details[open] summary {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.faq-content {
+    padding: 1rem;
+}
+
+/* Quiz */
+.quiz-section {
+    padding: 4rem 0;
+    background-image: url(images/beans.jpg);
+    background-size: cover;
+}
+
+.quiz-section h2 {
+    color: #0a0704c7; 
+}
+
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+
+.quiz-options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quiz-options input {
+    margin-right: 0.5rem;
+}
+
+#quiz-result {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Contact  */
+
+/* Social Media Icons */
+.social-links {
+    margin: 1.5rem 0;
+}
+
+.social-links h4 {
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    margin: 0;
+}
+
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+    
+    /* Common background properties for all icons */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+/* Individual social icons */
+.icon-facebook {
+    background-image: url('images/facebook.png');
+}
+
+.icon-instagram {
+    background-image: url('images/instagram.png');
+}
+
+.icon-X {
+    background-image: url('images/x.png');
+}
+
+.icon-tiktok {
+    background-image: url('images/tiktok.png');
+}
+
+/* Hover effect for icons */
+.icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Platform-specific hover colors */
+.icon-facebook:hover {
+    background-color: #3b5998;
+}
+
+.icon-instagram:hover {
+    background-color: #e1306c;
+}
+
+.icon-X:hover {
+    background-color: #000000;
+}
+
+.icon-tiktok:hover {
+    background-color: #fc0026;
+}
+.contact-section {
+    background-color: #3a3937;
+    padding: 4rem 0;
+    color: #F0F0F0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.contact-info, .contact-form {
+    padding: 2rem;
+    background-color: #f7f4ef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.success-message {
+    color: #27ae60;
+    font-weight: 500;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(39, 174, 96, 0.1);
+    border-radius: 4px;
+}
+
+/* Form Error Styling */
+.input-error {
+    border: 2px solid #e74c3c !important;
+    background-color: rgba(231, 76, 60, 0.05);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+    min-height: 1.25rem;
+}
+
+/* Add a red asterisk to mandatory field labels */
+label[for="name"]::after,
+label[for="email"]::after,
+label[for="message"]::after,
+label[for="phone"]::after {
+    content: " *";
+    color: #e74c3c;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-brown);
+    color: var(--text-light);
+    padding: 3rem 0 1rem;
+}
+
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: var(--light-brown);
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--text-light);
+}
+
+.footer-newsletter form {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.footer-newsletter input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.footer-newsletter .btn {
+    border-radius: 0 4px 4px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%; 
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+     
+}
+
+/* Selecting containers together to style Background colors, sections */
+.product-card, 
+.video-container, 
+.audio-container, 
+.quiz-container,
+.contact-info, 
+.contact-form,
+.brewing-faqs,
+details {
+    background-color: #222;
+    color: #F0F0F0;
+}
+
+.products-section,
+#f7f4ef {
+    background-color: #1e1e1e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .columns {
+        column-count: 1;
+    }
+    
+    .brewing-content, .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .menu {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu li {
+        margin: 0.5rem;
+    }
+    
+    .home h2 {
+        font-size: 2rem;
+    }
+    
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+}
+
